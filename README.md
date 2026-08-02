@@ -13,10 +13,10 @@ The model learns the best fit line of f(x)= wx+b by:
 5. Repeats until cost is minimum (converges)
 
 ## The Math
-Model: f(x)= wx+b
-Cost function:J(w,b) = (1/2m) Σ (f(xᵢ) - yᵢ)²
-Gradients: ∂J/∂w = (1/m) Σ (f(xᵢ) - yᵢ)*xᵢ and ∂J/∂b = (1/m) Σ (f(xᵢ) - yᵢ)
-Gradient Descent: w := w - α · ∂J/∂w and b := b - α · ∂J/∂b where α is the learning rate
+1. Model: f(x)= wx+b
+2. Cost function:J(w,b) = (1/2m) Σ (f(xᵢ) - yᵢ)²
+3. Gradients: ∂J/∂w = (1/m) Σ (f(xᵢ) - yᵢ)*xᵢ and ∂J/∂b = (1/m) Σ (f(xᵢ) - yᵢ)
+4. Gradient Descent: w := w - α · ∂J/∂w and b := b - α · ∂J/∂b where α is the learning rate
 
 ## Dataset
 A synthetic dataset generated from a known linear relationship (y = 3x + 5) with added noise, so that the answer is known in advance and can be verified. The noise is added so that all datapoints dont end up on the line.
